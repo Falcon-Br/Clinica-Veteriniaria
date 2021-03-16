@@ -1,0 +1,327 @@
+/* ----- configurações gerais ----- */
+*{
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    
+}
+
+h1{
+    text-align: center;  
+    margin: 15px;
+}
+
+.containerHeader{
+    padding: 0 500px;
+    border-style: solid;
+    border-color: black;
+    background-color: #80ffbf;
+    
+}
+
+.header{
+    width: 900px;
+    margin: 15px auto;
+    padding: 10px;
+    position: relative;
+    border-style: solid;
+    border-color: black;
+    border-radius: 30px;
+    background-color: rgb(126, 219, 255);
+    
+}
+.titulo{
+    font-size: 20px;
+    position: relative;
+}
+
+.logo{
+    display: inline-block;   
+}
+
+.titulo{
+    position: relative;
+    display: inline-block;
+    top: 9px;
+    left: 15px;
+}
+
+.icon{
+    width: 40px;
+    float: left;
+}
+
+.menu{
+    width: 800px;
+    position: absolute;
+    list-style-type: none;
+    top: 50%;
+    left: 30%;
+    transform: translateY(-50%); 
+}
+
+.botaoMenu{
+    display: inline-block;
+    width: 115px;
+    height: 25px;
+    margin: 0 15px;
+    padding: 3px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 15px;
+    text-align: center; 
+}
+
+.quemSomos{
+    margin: 0 50px;
+    position: relative;
+    width: 1300px;
+    margin: auto;
+    
+}
+
+.descricaoQuemsomos{
+    max-width: 600px;
+    position: relative;
+    vertical-align: top;
+    top: 100px;
+    left: 50px;
+    text-align: left;
+    display: inline-block;
+}
+
+.containerGatos{
+    display: inline-block;
+    position: relative;
+    left: 100px;
+}
+
+.imgGatos{
+    margin: 10px;
+    
+}
+
+/* ----- Sessão Cuidados ----- */
+.cuidados{
+    border-style: solid;
+    border-color: black;
+    width: 1300px;
+    height: 400px;
+    margin: auto;
+    position: relative;    
+}
+
+.containerVacina{
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    left: 5%;
+}
+
+.vacina{
+    width: 200px;
+    height: 200px;
+    top: 40px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 100px;
+    border-width: 2px; 
+    position: absolute;
+}
+
+.tituloCuidados{
+    width: 200px;
+    position: relative;
+    top: 230px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+.containerCuidar{
+    width: 200px;
+    height: 300px;;
+    border-width: 2px; 
+    position: absolute;
+    left: 35%;
+    transform: translateX(-30%); 
+
+}
+
+.cuidar{
+    width: 200px;
+    height: 200px;
+    top: 40px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 100px;
+    border-width: 2px; 
+    position: absolute;
+}
+
+.tituloCuidar{
+    width: 200px;
+    position: relative;
+    top: 230px;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.containerAdocao{
+    width: 200px;
+    height: 300px;
+    border-width: 2px; 
+    position: absolute;
+    left: 55%;
+}
+
+.adocao{
+    width: 200px;
+    height: 200px;
+    top: 40px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 100px;
+    border-width: 2px; 
+    position: absolute;
+}
+
+.tituloAdocao{
+    width: 200px;
+    position: relative;
+    top: 230px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.containerEstrutura{
+    width: 200px;
+    height: 300px;
+    border-width: 2px; 
+    position: absolute;
+    left: 78%;
+}
+
+.estrutura{
+    width: 200px;
+    height: 200px;
+    top: 40px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 100px;
+    border-width: 2px; 
+    position: absolute;  
+}
+
+.tituloEstrutura{
+    width: 200px;
+    position: relative;
+    top: 230px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* ----- Horário e Combos ----- */
+.combosHorarios{
+    width: 1300px;
+    margin: 50px;
+    margin: auto;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.tabela{
+    display: inline-block;
+    border-bottom-style: solid;
+    border-right-style: solid;
+    border-bottom-color: black;
+    border-right-color: black;
+    margin: 0;
+}
+
+.combos{
+    position: absolute;
+    width: 50%;
+    height: 80%;
+    left: 50%;
+    bottom: 40%;
+    transform: translateY(50%);
+    border-style: solid;
+    border-color: black;
+    box-sizing: border-box;
+    
+}
+
+.cards{
+    width: 150px;
+    height: 200px;
+    margin-right: 15px;
+    display: inline-block;
+    border-style: solid;
+    border-color: black;
+    
+}
+
+/* ----- Rodapé ----- */
+footer{
+    text-align: center;
+    height: 500px;
+    border-style: solid;
+    border-color: black;
+}
+
+.contato{
+    position: relative;
+}
+
+.dados{
+    border-style: solid;
+    border-color: black;
+    text-align: left;
+    width: 400px;
+    float: left;
+}
+
+form{
+    width: 500px;
+    height: 350px;
+    padding: 15px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.links{
+    border-style: solid;
+    border-color: black;
+    width: 300px;
+    float: right;
+}
+
+form textarea{
+    width: 100%;
+    height: 200px;
+}
+
+.input{
+    display: block;
+    width: 95%;
+    padding: 5px;
+    margin: 7px 0;
+    border-radius: 5px;
+
+}
+
+.copy{
+    clear: both;
+    position: relative;
+    top: 51%;
+    border-style: solid;
+    border-color: black;
+}

@@ -1,45 +1,197 @@
 <!DOCTYPE html>
-<html >
+<html lang="pt-br">
+
 <head>
-	<meta charset = "UTF-8">
-	<link rel="stylesheet" href = "reset.css">
-	<link rel="stylesheet" href = "style.css">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 	<title>Clínica Miau</title>
+	
+
 </head>
 
 <body>
-	<header>
-		<div class="Menu">
-			<img src="icone-cat.png">	
-			<h1>Clínica Miau</h1>	
-			<nav>
-				<ul>
-					<li>Home</li>
-					<li>Serviços</li>
-					<li>Dicas de Cuidado</li>
-					<li>Contato</li>
-				</ul>
-			</nav>	
+
+	<header class="containerHeader">
+		<div class="header">
+
+			<div class="logo">
+				<img class="icon" src="./images/icone-cat.png">
+				<p class="titulo">Clínica Miau</p>
+			</div>
+
+			<ul class="menu">
+				<li class="botaoMenu">Inicio</li>
+				<li class="botaoMenu">Quem Somos</li>
+				<li class="botaoMenu">Dicas de Cuidado</li>
+				<li class="botaoMenu">Contato</li>
+			</ul>
+
 		</div>
 	</header>
 
 	<main>
-		<section class = "quemsomos">
+		<section class="quemSomos">
+			<h1>Quem somos nos</h1>
 			
+				<article class="descricaoQuemsomos">
+					<p>Somos a maior clínica veterinária de Manaus, especializada em todos os tipos de gatos.
+						oferemos os mais diversos tipos de serviços especializados em felínos, sendo referência nesse ramo.
+						Aqui damos ao seu amigo, o melhor tratamento, desde a parte medicinal até a perte de estática.
+						Aqui o seu gato, é prioridade.
+					</p>
+				</article>
+
+			<div class="containerGatos">
+				<img class="imgGatos" src="./images/catvert.jpg" width="80px">
+				<img class="imgGatos" src="./images/catvert2.jpg" width="80px">
+				<img class="imgGatos" src="./images/catvert3.jpg" width="80px">
+				<img class="imgGatos" src="./images/catvert4.jpg" width="80px">
+			</div>
 		</section>
 
-		<section class = "especialidades">
-			
-		</section >
+		<section class="cuidados">
+			<h1>Cuidados</h1>
+				<div class="containerVacina">
+					<h2>VACINAÇÃO</h2>
+					<div class="vacina">
+					
+					</div>
+					<div class="tituloCuidados">
+						<p>Vacine seu pet Conosco</p>
+					</div>
+				</div>
 
-		<section class = "Estrutura">
-			
+			<div class="containerCuidar">
+				<h2>CUIDADO</h2>
+				<div class="cuidar">
+				</div>
+
+				<div class="tituloCuidados">
+					<p> O maior cuidado com o seu animal</p>
+				</div>
+			</div>
+
+			<div class="containerAdocao">
+				<h2>ADOÇÃO</h2>
+				<div class="adocao">
+				</div>
+
+				<div class="tituloAdocao">
+					<p>Seja solidário e faça uma adoção</p>
+				</div>
+			</div>
+
+			<div class="containerEstrutura">
+				<h2>ESTRUTRA</h2>
+				<div class="estrutura">
+				</div>
+
+				<div class="tituloEstrutura">
+					<p>Uma estrutura digna de Spar</p>
+				</div>
+			</div>
+		
 		</section>
+
+		<section class="combosHorarios">
+			
+			<h1>Horários e Combos</h1>
+			<table >
+				<tr>
+					<td class="tabela">Segunda</td>
+					<td class="tabela">8:00 às 17:00</td>
+				</tr>
+				<tr>
+					<td>Terça-Feira</td>
+					<td>8:00 às 17:00</td>
+				</tr>
+				<tr>
+					<td>Quarta-Feira</td>
+					<td>8:00 às 17:00</td>
+				</tr>
+				<tr>
+					<td>Quinta-Feira</td>
+					<td>8:00 às 17:00</td>
+				</tr>
+				<tr>
+					<td>Sexta-Feira</td>
+					<td>8:00 às 17:00</td>
+				</tr>
+				<tr>
+					<td>Sábado</td>
+					<td>10:00 às 15:00</td>
+				</tr>
+				<tr>
+					<td>Domingo</td>
+					<td>Fechado</td>
+				</tr>
+			</table>
+
+			<section class="combos">
+				<div class="cards">
+					<p>banho</p>
+				</div>
+
+				<div class="cards">
+					<p>Tosa</p>
+				</div>
+
+				<dis class="cards">
+					<p>banho+Tosa</p>
+				</dis>
+			</section>
+
+		</section>
+
 	</main>
 
 	<footer>
-		<p>&copy; Clínica Miau - 2021</p>
-	</footer>
+		<section class="contato">
+			<h1>Contatos</h1>
+			<section class="dados">
+				<div>
+					<p>Endereço: Rua dos papagaios, 135 - Centro</p>
+				</div>
 
+				<div>
+					<p>Telefone: (92) 9123-6543</p>
+				</div>
+
+				<div>
+					<p>E-mail: contato_miau@gmail.com.br</p>
+				</div>
+			</section>
+		</section>
+
+		<form>
+			<p>Nos manda uma mensagem, sugestões e críticas!</p>
+			<input class= "input" type="text" id="nome" name="nome" placeholder="Nome Completo">
+			<input class= "input" type="email" id="email" name="email" placeholder="E-mail">
+			<textarea class= "input" id="mensagem" name="mansagem" rows="5" cols="100"
+				placeholder="Escreva a sua mensagem!"></textarea>
+				
+		</form>
+
+		<section class="links">
+			<p>Links Rápidos</p>
+			<div>
+				<p>Quem Somos</p>
+			</div>
+
+			<div>
+				<p>Zelo</p>
+			</div>
+				<p>Horário e Combos</p>
+			<div>
+				<p>Contato</p>	
+			</div>
+		</section>
+		<section class="copy">
+			<p>&copy; Clínica Miau - 2021</p>
+		</section>
+		
+	</footer>
 </body>
+
 </html>
