@@ -4,23 +4,23 @@
     font-size: 20px;
     margin: 0;
     padding: 0; 
+    position: relative;
 }
 
  /* ----- Cabeçalho ----- */
 h1{
     text-align: center;  
-    margin: 15px;
+    padding: 30px 0;
 }
 
 header{
-    border-style: solid;
-    border-color: black;
+    padding: 15px 0;
     background-color: #80ffbf;
 }
 
 .containerHeader{
     width: 1200px;
-    margin: 15px auto;
+    margin:  auto;
     padding: 10px;
     position: relative;
     border-style: solid;
@@ -30,13 +30,20 @@ header{
 }
 
 .menu{
-    list-style-type: none;
-    overflow: hidden ;
-    display: inline-block;
     position: absolute;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
+}
+
+a{
+  text-decoration: none;
+}
+
+.logo{
+    width: 250px;
+    height: 50px;
+    position: relative; 
 }
 
 .botaoMenu{
@@ -49,13 +56,6 @@ header{
     border-width: 2px;
     border-radius: 15px;
     text-align: center; 
-
-}
-.logo{
-    width: 250px;
-    height: 50px;
-    position: relative;
-   
 }
 
 .icon{
@@ -77,17 +77,29 @@ header{
     text-align: center;
 }
 
-/* ----- Sessão Quem somos nos ----- */
-.containerQS{
-    position: relative;
-    background-color: #80c2ff;
-    top: -15px;
+#teste{
+    background-image: url("./images/cat2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 300px;  
+    margin: auto;
 }
-.quemSomos{
+
+/* ----- Sessão Quem somos nos ----- */
+#quemSomos{
     position: relative;
+    top: 0;
+    border: 3px solid black;
+}
+
+#containerQS{
+    position: relative;
+    top: 0;
     width: 1300px;
     height: 500px;
     margin: auto;
+    background-color: #80c2ff;
 }
 
 .descricaoQuemsomos{
@@ -95,15 +107,15 @@ header{
     position: relative;
     vertical-align: top;
     top: 100px;
-    left: 50px;
+    left: 130px;
     text-align: left;
     display: inline-block;
 }
 
 .containerGatos{
-    display: inline-block;
-    position: relative;
-    left: 100px;
+    position: absolute;
+    right: 12%;
+    top: 15%;
 }
 
 #gato1{
@@ -127,18 +139,19 @@ header{
 }
 
 /* ----- Sessão Cuidados ----- */
-.cuidados{
+#cuidados{
+    position: relative;    
+  
+}
+
+.containerCuidados{
     width: 1300px;
     height: 500px;
     margin: auto;
     position: relative; 
-    background-color: #80ffbf;   
-    
-    
-}
-
-.tituloCuidado{
-    margin: 40px;
+    top: 0;
+    background-color: rgb(50, 102, 50); 
+   
 }
 
 .containerVacina{
@@ -263,13 +276,17 @@ header{
 }
 
 /* ----- Horário e Combos ----- */
-.combosHorarios{
+#horariosCombos{
+    
+}
+
+.containerHC{
     background-color: rgb(126, 219, 255);
     width: 1300px;
     height: 500px;
     margin: auto;
     position: relative;
-    top: -15px;
+    top: 0;
     padding-bottom: 50px;
 }
 
@@ -280,9 +297,12 @@ header{
     transform: translateY(-50%);
 }
 
-.textoHC{
+#tituloHc{
+    padding-bottom: 15px;
+}
+
+#textoHc{
     text-align: center; 
-    margin-top: 30px;  
 }
 
 td{
@@ -341,22 +361,19 @@ td{
 
 /* ----- Rodapé ----- */
 footer{  
-    border-style: solid;
-    border-color: black;
     background-color: rgb(131, 86, 50);
     height: 600px;
     position: relative;
-    top: -15px;
+    top: 0;
 }
 
 .containerFooter{
-    height: 98%;
+    height: 100%;
     width: 1500px;
     margin: auto;
     text-align: center;
     position: relative;
     box-sizing: border-box;
-    
 }
 
 .contato{
@@ -369,6 +386,7 @@ form{
     padding: 15px;
     border-style: solid;
     border-color: black;
+    background-color: rgba(185, 102, 25, 0.295);
     border-radius: 5px;
     position: absolute;
     left: 50%;
@@ -395,10 +413,15 @@ form{
 }
 
 .links{
-    width: 300px;
+    width: 200px;
     position: absolute;
     right: 0;
-    bottom: 30%;
+    bottom: 30%;  
+}
+
+#linkRapido{
+    font-size: 30px;
+    border-bottom: 2px solid  black;
 }
 
 form textarea{
@@ -406,11 +429,11 @@ form textarea{
     height: 200px;
 }
 
-.input{
+.inputformulario{
     display: block;
     width: 95%;
-    padding: 5px;
-    margin: 7px 0;
+    margin: 5px 0;
+    padding: 5px 5px 5px 15px;
     border-radius: 5px;
 }
 
