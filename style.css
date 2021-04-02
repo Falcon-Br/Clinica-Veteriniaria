@@ -1,4 +1,4 @@
-/* ----- configurações gerais ----- */
+/* ----------------- configurações gerais ------------------- */
 *{
     font-family: 'Indie Flower', cursive;
     font-size: 20px;
@@ -7,15 +7,40 @@
     position: relative;
 }
 
- /* ----- Cabeçalho ----- */
 h1{
     text-align: center;  
     padding: 30px 0;
+    font-size: 40px;
 }
+
+a{
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    background-color: rgb(35, 193, 255);
+    border-radius: 15px;
+    border: 2px solid black;
+    text-decoration: none;
+
+}
+
+a:hover{
+    background-color: #80ffbf;
+}
+
+a:active{
+    color: black;
+}
+
+p{
+    font-size: 22px;
+}
+ /* -----------------------Cabeçalho -----------------------*/
+
 
 header{
     padding: 15px 0;
-    background-color: #80ffbf;
+    background-color: rgb(56, 156, 163);
 }
 
 .containerHeader{
@@ -26,7 +51,7 @@ header{
     border-style: solid;
     border-color: black;
     border-radius: 30px;
-    background-color: rgb(126, 219, 255);   
+    background-color: rgb(0, 174, 255);   
 }
 
 .menu{
@@ -34,10 +59,6 @@ header{
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-}
-
-a{
-  text-decoration: none;
 }
 
 .logo{
@@ -50,12 +71,9 @@ a{
     display: inline-block;
     width: 180px;
     margin: 0 15px;
-    padding: 3px;
-    border-style: solid;
-    border-color: black;
-    border-width: 2px;
-    border-radius: 15px;
+    border-radius: 20px;
     text-align: center; 
+    border: 0 solid black;
 }
 
 .icon{
@@ -78,19 +96,51 @@ a{
 }
 
 #teste{
-    background-image: url("./images/cat2.jpg");
+    background-image: url("./images/cat9.jpg");
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
-    height: 300px;  
+    height: 600px;  
     margin: auto;
 }
 
-/* ----- Sessão Quem somos nos ----- */
-#quemSomos{
+
+
+#textoText{
+    color: white;
+    position: absolute;
+    width: 500px;
+    top: 200px;
+    left: 250px;
+    font-size: 35px;
+}
+
+/* ----------------------------- Banner 1------------------------------ */
+
+#banner{
+    background-image: url("./images/cat6.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 650px;  ;
+}
+
+#textoBanner{
+    font-size: 70px;
+    color: white;
+    width: 650px;
+    position: absolute;
+    left: 100px;
+    top: 150px;
+    text-shadow: black 3px 3px  3px ;
+    transform: rotate(-3deg);
+}
+
+/* ----------------------- Sessão Quem somos nos ------------------------------ */
+#quemSomosNos{
     position: relative;
     top: 0;
-    border: 3px solid black;
+    background-color: #80ffbf ;
 }
 
 #containerQS{
@@ -99,14 +149,14 @@ a{
     width: 1300px;
     height: 500px;
     margin: auto;
-    background-color: #80c2ff;
+    
 }
 
-.descricaoQuemsomos{
+#descricaoQuemSomos{
     max-width: 600px;
     position: relative;
     vertical-align: top;
-    top: 100px;
+    top: 30px;
     left: 130px;
     text-align: left;
     display: inline-block;
@@ -138,10 +188,31 @@ a{
     top: 20px;
 }
 
-/* ----- Sessão Cuidados ----- */
+/* ----------------------------- Banner 2 ------------------------------ */
+#banner2{
+    background-image: url("./images/cat4.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 650px;  
+}
+
+#textoBanner2{
+    font-size: 70px;
+    color: white;
+    width: 650px;
+    position: absolute;
+    right: 20px;
+    top: 100px;
+    text-shadow: black 3px 3px  3px ;
+    transform: rotate(3deg);
+}
+
+/* -------------------------- Sessão Cuidados ------------------------- */
 #cuidados{
-    position: relative;    
-  
+    position: relative;
+    background-color: #80c2ff;
+    
 }
 
 .containerCuidados{
@@ -150,8 +221,6 @@ a{
     margin: auto;
     position: relative; 
     top: 0;
-    background-color: rgb(50, 102, 50); 
-   
 }
 
 .containerVacina{
@@ -275,15 +344,31 @@ a{
     box-sizing: border-box;
 }
 
-/* ----- Horário e Combos ----- */
+/* ----------------------------- Banner 3 ------------------------------ */
+#banner3{
+    background-image: url("./images/cat9.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 650px;  
+}
+
+#textoBanner3{
+    font-size: 40px;
+    color: white;
+    width: 500px;
+    left: 150px;
+    top: 200px;
+    text-shadow: black 3px 3px  3px ;
+}
+
+/* ------------------------------ Horário e Combos --------------------------------- */
 #horariosCombos{
-    
+    background-color: #80ffbf;
 }
 
 .containerHC{
-    background-color: rgb(126, 219, 255);
     width: 1300px;
-    height: 500px;
+    height: 550px;
     margin: auto;
     position: relative;
     top: 0;
@@ -292,13 +377,9 @@ a{
 
 .tabela{
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 10%;
-    transform: translateY(-50%);
-}
-
-#tituloHc{
-    padding-bottom: 15px;
+    transform: translateY(-70%);
 }
 
 #textoHc{
@@ -316,25 +397,29 @@ td{
 
 .combos{
     position: absolute;
-    width: 600px;
+    width: 650px;
     height: 250px;
     left: 50%;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 70%;
+    transform: translateY(-70%);
     border-style: solid;
     border-color: black;
     box-sizing: border-box;
 }
 
 .cards{
-    width: 150px;
+    width: 170px;
     height: 200px;
     margin: 15px;
     text-align: center;
     display: inline-block;
     border-style: solid;
     border-color: black;
-    background-color: rebeccapurple;
+    background-color: #80c2ff;
+}
+
+.descricaoCard{
+    font-size: 25px;
 }
 
 #cardBanho{
@@ -342,6 +427,7 @@ td{
     width: 150px;
     background-image: url("./images/icon-banho.png");
     background-size: cover;
+    display: inline-block;
 }
 
 #cardTosa{
@@ -349,7 +435,7 @@ td{
     width: 150px;
     background-image: url("./images/icon-tosa.png");
     background-size: cover;
-    
+    display: inline-block;
 }
 
 #cardBT{
@@ -357,14 +443,16 @@ td{
     width: 150px;
     background-image: url("./images/icon-banhoTosa.png");
     background-size: cover;
+    display: inline-block;
 }
 
-/* ----- Rodapé ----- */
+/* ------------------------------ Rodapé ------------------------------ */
 footer{  
-    background-color: rgb(131, 86, 50);
+    background-color: rgb(56, 156, 163);
     height: 600px;
     position: relative;
     top: 0;
+    
 }
 
 .containerFooter{
@@ -376,34 +464,40 @@ footer{
     box-sizing: border-box;
 }
 
-.contato{
+#contato{
     position: relative;
+}
+
+#tituloContato{
+    padding-bottom: 5px;
 }
 
 form{
     width: 500px;
-    height: 410px;
+    height: 400px;
     padding: 15px;
     border-style: solid;
     border-color: black;
-    background-color: rgba(185, 102, 25, 0.295);
+    background-color: rgb(0, 174, 255);
     border-radius: 5px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.botao{
+#botao{
     width: 180px;
     position: absolute;
     bottom: 5%;
     left: 50%;
     transform: translateX(-50%);
+    border-radius: 5px;
+
 }
 
 .endereco{
     text-align: left;
-    width: 400px;
+    width: 450px;
     position: absolute;
     bottom: 30%;
 }
@@ -412,16 +506,21 @@ form{
     margin: 15px;
 }
 
-.links{
+#links{
     width: 200px;
     position: absolute;
-    right: 0;
-    bottom: 30%;  
+    right: 7%;
+    bottom: 30%;
 }
 
 #linkRapido{
     font-size: 30px;
     border-bottom: 2px solid  black;
+}
+
+.listaLinks{
+    list-style: none;
+    margin: 15px 0;
 }
 
 form textarea{
@@ -440,5 +539,5 @@ form textarea{
 .copy{
     position: absolute;
     width: 100%;
-    bottom: 15px;   
+    bottom: 0;   
 }

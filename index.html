@@ -23,10 +23,10 @@
 
 			<div class="menu">
 				<ul>
-					<button class="botaoMenu"><a href="#containerQS">Quem somos</a></button>
-					<button class="botaoMenu"><a href="#cuidados">Cuidados</a></button>
-					<button class="botaoMenu"><a href="#horariosCombos">Horários e Combos</a></button>
-					<button class="botaoMenu"><a href="#contato">Contato</a></button>
+					<li class="botaoMenu"><a href="#containerQS">Quem somos</a></li>
+					<li class="botaoMenu"><a href="#cuidados">Cuidados</a></li>
+					<li class="botaoMenu"><a href="#horariosCombos">Horários e Combos</a></li>
+					<li class="botaoMenu"><a href="#contato">Contato</a></li>
 				</ul>
 			</div>
 			
@@ -35,16 +35,21 @@
 
 	<main>
 
-	
+<!------- Banner -------->
+
+	<div id="banner">
+		<article id="textoBanner">Com amor e Cuidado, tratamos o seu Pet como um Rei!</article>
+
+	</div>	
 
 <!-- Sessão Quem somos nós -->
-		<section id=QuemSomosNos>
+		<section id=quemSomosNos>
 			<div id="containerQS">
 				<div class="quemSomos">
-					<h1>Quem somos nos</h1>
+					<h1>Quem somos nós</h1>
 					
-						<article class="descricaoQuemsomos">
-							<p>Somos a maior clínica veterinária de Manaus, especializada em todos os tipos de gatos.
+						<article id="descricaoQuemSomos">
+							<p id="textoQS">Somos a maior clínica veterinária de Manaus, especializada em todos os tipos de gatos.
 								oferemos os mais diversos tipos de serviços especializados em felínos, sendo referência nesse ramo.
 								Aqui damos ao seu amigo, o melhor tratamento, desde a parte medicinal até a perte de estática.
 								Aqui o seu gato, é prioridade.
@@ -61,6 +66,10 @@
 				</div>
 			</div>
 		</section>
+
+	<div id="banner2">
+		<article id="textoBanner2">Estrutura de castelo. Adquada para a vossa magestade!</article>
+	</div>	
 
 <!-- Sessão Cuidados -->
 		<section id="cuidados">
@@ -104,7 +113,12 @@
 				</div>
 			</div>
 		</section>
+
+<!------ Imagem Ilustrativa ------>
 		
+		<div id="banner3">
+			<article id="textoBanner3">Profissionais formados, cuidadosose e responsáveis. Qualidade de atendimento garantida! .</article>
+		</div>
 
 <!------ Sessão Horário e Combos ------>
 		<section id="horariosCombos">
@@ -149,17 +163,17 @@
 			
 				<section class="combos">
 					<div class="cards">
-						<p>Banho</p>
+						<p class="descricaoCard">Banho</p>
 						<div id="cardBanho"></div>
 					</div>
 
 					<div class="cards">
-						<p>Tosa</p>
+						<p class="descricaoCard">Tosa</p>
 						<div id="cardTosa"></div>
 					</div>
 
 					<dis class="cards">
-						<p>Banho+Tosa</p>
+						<p class="descricaoCard">Banho+Tosa</p>
 						<div id="cardBT"></div>
 					</dis>
 				</section>
@@ -169,14 +183,10 @@
 
 	</main>
 
-	<!-- <div id="teste">
-
-	</div>	 -->
-
 <!------ Sessão do Rodapé ------>
 	<footer id="contato">
 		<div class="containerFooter">
-			<h1>Contato</h1>
+			<h1 id="tituloContato">Contato</h1>
 				
 				<section class="endereco">
 					<div class="divEndereco">
@@ -197,15 +207,14 @@
 				<input class= "inputformulario" type="text" id="nome" name="nome" placeholder="Nome Completo">
 				<input class= "inputformulario" type="email" id="email" name="email" placeholder="E-mail">
 				<textarea class= "inputformulario" id="mensagem" name="mansagem" rows="5" cols="100" placeholder="Escreva a sua mensagem!"></textarea>
-				<input class="botao" type="submit" name="enviar" value="Enviar Sugestão">		
+				<input id="botao" type="submit" name="enviar" value="Enviar Sugestão">		
 			</form>
 
-			<section class="links">
+			<section id="links">
 				<p id="linkRapido">Links Rápidos</p>
-				<button><a href="#containerQS">Quem somos</a></button>
-				<button><a href="#cuidados">Cuidados</a></button>
-				<button><a href="#horariosCombos">Horários e Combos</a></button>
-				<button><a href="#contato">Contato</a></button>
+				<li class="listaLinks"><a href="#containerQS">Quem somos</a></li>
+				<li class="listaLinks"><a href="#cuidados">Cuidados</a></li>
+				<li class="listaLinks"><a href="#horariosCombos">Horários e Combos</a></li>
 			</section>
 
 			<section class="copy">
