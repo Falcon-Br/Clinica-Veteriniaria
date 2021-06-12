@@ -4,8 +4,9 @@
     font-size: 20px;
     margin: 0;
     padding: 0; 
+    
     position: relative;
-    scroll-behavior: smooth; /* Deixa click dos links suaves */
+    scroll-behavior: smooth; /* Deixa click dos links suaves */+
 }
 
 h1{
@@ -106,8 +107,6 @@ header{
     margin: auto;
 }
 
-
-
 #textoText{
     color: white;
     position: absolute;
@@ -121,9 +120,9 @@ header{
 
 #banner{
     background-image: url("./images/cat6.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
+    background-position: center;
     height: 650px;  
 }
 
@@ -199,7 +198,7 @@ header{
     background-image: url("./images/cat4.jpg");
     background-size: cover;
     background-attachment: fixed;
-    width: 100%;
+    background-position: center;
     height: 650px;  
 }
 
@@ -222,7 +221,7 @@ header{
     border-bottom: 2px solid  black;
 }
 
-.containerCuidados{
+#containerCuidados{
     width: 1300px;
     height: 500px;
     margin: auto;
@@ -324,6 +323,7 @@ header{
     text-align: center;
     box-sizing: border-box;
 }
+
 .containerEstrutura{
     text-align: center;
     width: 200px;
@@ -379,7 +379,7 @@ header{
     background-color: rgb(56, 156, 163);
 }
 
-.containerHC{
+#containerHC{
     width: 1300px;
     height: 550px;
     margin: auto;
@@ -462,11 +462,12 @@ td{
     display: inline-block;
 }
 
-/* ----------------------------- Banner 4 ------------------------------ */
+/* ------------------------------------------------------- Banner 4 ------------------------------------------------- */
 #banner4{
     background-image: url("./images/cat10.jpg");
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
     height: 650px;  
 }
 
@@ -483,6 +484,7 @@ td{
 
 /* ------------------------------ Rodapé ------------------------------ */
 footer{  
+    overflow: auto; /*Estava dando bug, e isso resolveu. Não tirar */
     background-color: rgb(56, 156, 163);
     height: 600px;
     position: relative;
@@ -490,7 +492,7 @@ footer{
     border-top: 2px solid black;
 }
 
-.containerFooter{
+#containerFooter{
     height: 100%;
     width: 1500px;
     margin: auto;
@@ -574,4 +576,83 @@ form textarea{
     position: absolute;
     width: 100%;
     bottom: 0;   
+}
+
+/* ------------------------------------------------------- Responsidade ------------------------------------------------- */
+
+@media screen and (max-width: 1600px) {
+ 
+    #links{
+        right: 50%;
+        transform: translateX(50%);
+        bottom: 10%;
+    }
+
+    .endereco{
+        text-align: center;
+        bottom: 35%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    footer{    
+        height: 1200px;
+    }
+
+    #textoBanner4{
+        font-size: 45px;
+        width: 500px;
+    }
+
+    #textoBanner2{
+        font-size: 65px;
+        text-align: center;
+        width: 600px;
+        top: 130px; 
+    }
+
+    #textoBanner{
+        font-size: 60px;
+        width: 500px;
+        text-align: center;
+        left: 50px;
+    }
+}
+
+@media screen and (max-width: 1300px){
+
+    #containerQS, #containerCuidados, #containerHC, #containerFooter{
+      width: 100%;
+    }
+
+    .containerHeader{
+        height: 400px;
+        width: 80%;
+    }  
+
+    .menu, .botaoMenu{
+        position: relative;
+        top: 100px;
+        margin: auto;
+        width: 500px;
+    }
+    
+    .logo{
+        left: 45%;
+        transform: translateX(-45%);
+    }
+
+    .icon{
+        width: 50%;
+    }
+
+    .tituloHeader{
+        font-size: 40px;
+    }
+    .containerTitulo{
+        position: relative;
+        left: 100%;
+        top: 80%;
+        width: 180px;
+    }
 }
