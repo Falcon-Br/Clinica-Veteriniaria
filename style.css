@@ -35,7 +35,7 @@ a:active{
 }
 
 p{
-    font-size: 22px;
+    font-size: 25px;
 }
 
  /* -----------------------Cabeçalho -----------------------*/
@@ -118,7 +118,7 @@ header{
 
 /* ----------------------------- Banner 1------------------------------ */
 
-#banner{
+#banner1{
     background-image: url("./images/cat6.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -126,7 +126,7 @@ header{
     height: 650px;  
 }
 
-#textoBanner{
+#textoBanner1{
     font-size: 70px;
     color: white;
     width: 650px;
@@ -158,13 +158,12 @@ header{
 }
 
 #descricaoQuemSomos{
-    max-width: 600px;
+    width: 600px;
     position: relative;
-    vertical-align: top;
     top: 30px;
     left: 130px;
     text-align: left;
-    display: inline-block;
+    font-size: 28px;
 }
 
 .containerGatos{
@@ -231,6 +230,12 @@ header{
     border-left: 2px solid  black;
     border-right:  2px solid  black;
 }
+.tituloVacina{
+    width: 200px;
+    position: relative;
+    top: 230px;
+    box-sizing: border-box;
+}
 
 .containerVacina{
     text-align: center;
@@ -288,8 +293,6 @@ header{
     width: 200px;
     position: relative;
     top: 230px;
-    border-style: solid;
-    border-color: black;
     text-align: center;
     box-sizing: border-box;
 }
@@ -363,6 +366,7 @@ header{
 }
 
 #textoBanner3{
+    position: absolute;
     font-size: 50px;
     color: white;
     width: 700px;
@@ -400,6 +404,7 @@ header{
 
 #textoHc{
     text-align: center; 
+    margin: 0 25px;
 }
 
 td{
@@ -484,9 +489,9 @@ td{
 
 /* ------------------------------ Rodapé ------------------------------ */
 footer{  
-    overflow: auto; /*Estava dando bug, e isso resolveu. Não tirar */
+    overflow: hidden; /*Estava dando bug, e isso resolveu. Não tirar */
     background-color: rgb(56, 156, 163);
-    height: 600px;
+    height: 650px;
     position: relative;
     top: 0;
     border-top: 2px solid black;
@@ -511,7 +516,7 @@ footer{
 
 form{
     width: 500px;
-    height: 400px;
+    height: 450px;
     padding: 15px;
     border-style: solid;
     border-color: black;
@@ -583,20 +588,18 @@ form textarea{
 @media screen and (max-width: 1600px) {
  
     #links{
-        right: 50%;
-        transform: translateX(50%);
-        bottom: 10%;
+        right: 30%;
+        bottom: 13%;
     }
 
     .endereco{
         text-align: center;
-        bottom: 35%;
-        left: 50%;
-        transform: translateX(-50%);
+        bottom: 15%;
+        left: 20%;
     }
 
     footer{    
-        height: 1200px;
+        height: 1000px;
     }
 
     #textoBanner4{
@@ -611,22 +614,27 @@ form textarea{
         top: 130px; 
     }
 
-    #textoBanner{
+    #textoBanner1{
         font-size: 60px;
         width: 500px;
         text-align: center;
         left: 50px;
     }
+    
+    #containerFooter{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 1300px){
 
-    #containerQS, #containerCuidados, #containerHC, #containerFooter{
+    #containerQS, #containerCuidados, #containerHC{
       width: 100%;
+      height: 1000px;
     }
 
     .containerHeader{
-        height: 400px;
+        height: 350px;
         width: 80%;
     }  
 
@@ -654,5 +662,345 @@ form textarea{
         left: 100%;
         top: 80%;
         width: 180px;
+    }
+
+    #containerHC{
+        height: 1000px;
+    }
+
+    #descricaoQuemSomos{
+        position: static;
+        margin: auto;
+        width: 80%;
+        font-size: 35px;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+
+    p{
+        font-size: 25px;
+    }
+
+    .containerGatos{
+        right: 50%; 
+        transform: translateX(50%);
+        top: 50%;   
+    }
+
+    .containerVacina{
+        left: 15%;
+    }
+
+    .containerCuidar{
+        left: 70%;
+    }
+    
+    .containerAdocao{
+        top: 50%;
+        left: 15%;
+    }
+
+    .containerEstrutura{
+        top: 50%;
+        left: 65%;
+    }
+
+    .combos{
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #banner3{
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .tabela{
+        position: absolute;
+        bottom: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    footer{    
+        height: 1200px;
+    }
+
+    #links{
+        right: 50%;
+        transform: translateX(50%);
+        bottom: 5%;
+    }
+
+    .endereco{
+        text-align: center;
+        bottom: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    td, th{
+        font-size: 28px;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    
+    #banner1, #banner2, #banner3, #banner4{
+        height: 400px;  
+        width: 100%;
+    }
+
+    #textoBanner1{
+        width: 300px;
+        font-size: 40px;
+        top: 60px;
+        left: 30px;
+    }
+
+    #textoBanner2{
+        width: 300px;
+        font-size: 40px;
+        top: 70px;
+    }
+
+    #textoBanner3{
+        width: 300px;
+        top: 70px;
+        left: 60px;
+        font-size: 30px;
+    }
+
+    #textoBanner4{
+        width: 300px;
+        font-size: 30px;
+        top: 70px;
+    }
+
+    #descricaoQuemSomos{
+        font-size: 30px; 
+    }
+    
+    #banner2{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .menu{
+        width: 100%;
+    }
+
+    .icon{
+        width: 50%;
+    }
+
+    .tituloHeader{
+        width: 10px;   
+        font-size: 30px;
+    }
+
+    .containerTitulo{
+        width: 100px;
+        left: 80%;
+    }
+
+    .botaoMenu{
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #banner1{
+        height: 300px;
+    }
+
+    #textoBanner1{
+        width: 250px;
+        font-size: 25px;
+        top: 70px;
+    }
+
+    #descricaoQuemSomos{
+        font-size: 25px;
+    }
+
+    .containerGatos{
+        width: 310px;
+        height: 350px;
+    }
+
+    #gato1, #gato2, #gato3, #gato4{
+        width: 70px;
+    }
+
+    #textoBanner2{
+        width: 200px;
+        font-size: 30px;
+        top: 70px;
+    }
+
+    #containerCuidados{
+        height: 800px;
+    }
+
+    .vacina, .cuidar, .estrutura, .adocao{
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 100px;
+    }
+
+    .containerVacina, .containerCuidar, .containerEstrutura, .containerAdocao{
+        height: 220px;
+    }
+
+    .containerAdocao, .containerEstrutura{
+        bottom: 10%;
+        top: unset;
+    }
+
+    .containerVacina, .containerAdocao{
+        left: 10%;
+    }
+
+    .containerEstrutura{
+        left: 60%;
+    }
+
+    .containerCuidar{
+        left: 68%;
+    }
+
+    .tituloVacina, .tituloEstrutura, .tituloCuidar, .tituloAdocao{
+        position: absolute;
+        bottom: 0;
+        top: unset;
+    }
+
+    #cardBanho, #cardTosa, #cardBT{
+        width: 100px;
+        height: 100px;
+        position: relative;
+        top: 30%;
+        transform: translateY(-30%);
+    }
+
+    .cards{
+        height: 150px;
+        width: 100px;
+    }
+
+    .descricaoCard{
+        font-size: 15px;
+    }
+
+    .combos{
+        width: 430px;
+        height: 190px;
+        top: 25%;
+    }
+
+    td, th{
+        font-size: 20px;
+        width: 300px;
+    }
+
+    form{
+        width: 70%;
+    }
+    
+}
+
+@media screen and (max-width: 500px){
+    
+    #descricaoQuemSomos{
+        font-size: 25px;
+    }
+
+    .containerGatos{
+        top: 50%;
+        width: 310px;
+        height: 280px;
+    }
+
+    #gato1, #gato2, #gato3, #gato4{
+        width: 70px;
+    }
+
+    .vacina, .cuidar, .estrutura, .adocao{
+        width: 60px;
+        height: 60px;
+        top: 26%;
+    } 
+
+    #textoBanner3{
+        width: 70%;
+    }
+
+    .containerVacina, .containerAdocao, .containerEstrutura, .containerCuidar{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .containerAdocao{
+        top: 35%;
+    }
+
+    .containerEstrutura{
+        top: 55%;
+    }
+    
+    .containerCuidar{
+        top: 75%;
+    }
+
+    .vacina, .adocao, .estrutura, .cuidar{
+        left: 0;
+    }
+
+    .tituloVacina, .tituloEstrutura, .tituloCuidar, .tituloAdocao{
+        top: 50px;
+        left: 15%;
+    }
+
+    #textoHc{
+        font-size: 30px;
+    }
+
+    #containerHC{
+        height: 1500px;
+    }
+   
+    .cards{
+        display: block;
+        left: 47%;
+        transform: translateX(-47%);
+    }
+
+    .combos{
+        width: 80%;
+        height: 550px;
+    }
+
+    .tabela{
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        transform: translate(-50%, -10%);
+    }
+
+    td, th{
+        font-size: 22px;
     }
 }
